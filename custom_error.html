@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{TITLE}}</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #2c3e50 0%, #4a235a 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .error-container {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+            border: 2px solid #e74c3c;
+        }
+        .error-icon {
+            font-size: 60px;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #c0392b;
+            font-size: 28px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .error-message {
+            color: #c0392b;
+            font-size: 18px;
+            margin: 20px 0;
+            line-height: 1.5;
+            padding: 15px;
+            background: #ffeaea;
+            border-radius: 8px;
+            border-left: 4px solid #e74c3c;
+        }
+        .buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 25px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            min-width: 140px;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #2c3e50 0%, #4a235a 100%);
+            color: white;
+        }
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="error-container">
+        <div class="error-icon">✗</div>
+        <h1>{{TITLE}}</h1>
+        <div class="error-message">
+            {{MESSAGE}}
+        </div>
+
+        <div class="buttons">
+            {{BUTTONS}}
+        </div>
+    </div>
+</body>
+</html>
